@@ -1,0 +1,22 @@
+/* main section */
+#mainSection {
+  background-color: var(--Tertiary-color);
+  margin: auto 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  #mainSection {
+    margin: auto 4rem;
+  }
+}
+
+#mainSection #box-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mainSection #box-row .boxes {
+  text-align: center;
+  flex: 1;
+  margin: 2rem;
+}

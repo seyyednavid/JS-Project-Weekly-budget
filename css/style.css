@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #003f88;
+  --secondary-color: #00509d;
+  --Tertiary-color: #fff;
+  --hover-color: #01497c;
+  --box-color-budget: #add7f6;
+  --border-color: #caf0f8;
+  --box-color-success: #a1cca5;
+  --box-color-danger: #f8ad9d;
+  --box-color-warning: #f2d492;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+}
+
+/* header */
+#header {
+  color: var(--Tertiary-color);
+  text-align: center;
+  padding: 3rem 0;
+}
+
+/* main section */
+#mainSection {
+  background-color: var(--Tertiary-color);
+  margin: auto 6rem;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 1rem;
+}
+#mainSection #box-row {
+  display: flex;
+  justify-content: center;
+}
+#mainSection #box-row .boxes {
+  text-align: center;
+  flex: 1;
+  margin: 2rem;
+}
+
+/* left section */
+#boxColumnLeft h2 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+/* form section in left section */
+#boxColumnLeft #formAddExpenses {
+  padding: 1rem 0rem;
+}
+#boxColumnLeft #formAddExpenses .formGroup {
+  margin-bottom: 1.5rem;
+}
+
+#boxColumnLeft #formAddExpenses label {
+  display: block;
+  text-align: left;
+  margin: 0.5rem 0;
+}
+#boxColumnLeft #formAddExpenses input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+#boxColumnLeft #formAddExpenses button {
+  background-color: var(--secondary-color);
+  color: var(--Tertiary-color);
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: inherit;
+}
+#boxColumnLeft #formAddExpenses button:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* right section */
+#boxColumnRight h2 {
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+#boxColumnRight #expensesList ul {
+  margin-bottom: 2rem;
+}
+/* add li via js */
+#boxColumnRight #expensesList ul li {
+  list-style: none;
+  text-align: center;
+  border: 1px solid var(--box-color-budget);
+  padding: 0.5rem 0;
+  background-color: var(--border-color);
+  color: #00509d;
+}
+
+#boxColumnRight #budgetTrack div {
+  border: 1px solid var(--border-color);
+  padding: 0.75rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+#boxColumnRight #budgetTrack .total {
+  background-color: var(--box-color-budget);
+  color: var(--primary-color);
+}
+
+/* definition various type of div color depended on left budget  */
+
+.alert-success {
+  background-color: var(--box-color-success);
+  color: #003e1f;
+  padding: 0.5rem 0;
+}
+.alert-danger {
+  background-color: var(--box-color-danger);
+  color: #ba181b;
+  padding: 0.5rem 0;
+}
+.alert-warning {
+  background-color: var(--box-color-warning);
+  color: #583101;
+  padding: 0.5rem 0;
+}

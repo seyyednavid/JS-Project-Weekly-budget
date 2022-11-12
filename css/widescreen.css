@@ -1,0 +1,10 @@
+/* main section */
+#mainSection {
+  margin: auto 15rem;
+}
+
+@media screen and (max-width: 1400px) {
+  #mainSection {
+    margin: auto 9rem;
+  }
+}
